@@ -11,7 +11,7 @@ import org.junit.runner.RunWith;
 		glue = {"support", "step_definitions"},
 		tags = {"@regression"},
 		monochrome = false,
-		plugin = {"pretty","html:target/cucumber-report","json:target/cucumber-report/cucumber.json"}
+		plugin = {"pretty","html:output/cucumber-report"}
 		)
 public class RunTest {
 	

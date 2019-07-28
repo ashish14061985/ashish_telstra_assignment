@@ -1,4 +1,4 @@
-@regression @addcart
+@regression
 Feature: Validate customer is able to add items in the shopping cart and compare the product
 
   Scenario: Validate user is able to add dresses in the shopping cart

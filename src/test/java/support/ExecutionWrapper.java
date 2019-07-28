@@ -26,7 +26,7 @@ public class ExecutionWrapper {
     public void embedScreenshot(Scenario scenario) {
         if(scenario.isFailed()) {
             try {
-                scenario.write("Current Page URL is " + BrowserDriver.getCurrentDriver().getCurrentUrl());
+                scenario.write("Current Page URL : " + BrowserDriver.getCurrentDriver().getCurrentUrl());
                 byte[] screenshot = ((TakesScreenshot)BrowserDriver.getCurrentDriver()).getScreenshotAs(OutputType.BYTES);
                 scenario.embed(screenshot, "image/png");
             } catch (WebDriverException somePlatformsDontSupportScreenshots) {

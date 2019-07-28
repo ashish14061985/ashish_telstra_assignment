@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+Test set: Parallel03IT
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.06 sec <<< FAILURE! - in Parallel03IT
+initializationError(Parallel03IT)  Time elapsed: 0 sec  <<< ERROR!
+cucumber.runtime.CucumberException: Unknown option: --tag
+

@@ -1,0 +1,13 @@
+support\BrowserDriver.class
+support\RandomEmailFunction.class
+step_definitions\ProductShoppingCartVerification.class
+pageobjects\RegisterAccountPage.class
+pageobjects\LoginPage.class
+support\ExecutionWrapper$1.class
+support\ProductInfo.class
+step_definitions\NewUserRegistration.class
+logs\Log.class
+support\ExecutionWrapper.class
+support\BrowserFactory.class
+support\RunTest.class
+pageobjects\ShoppingDressPage.class

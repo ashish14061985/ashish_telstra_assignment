@@ -1,0 +1,156 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 6454454263,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ExecutionWrapper.openBrowser()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Validate user is able to register successfully",
+        "description": "",
+        "id": "incorrect-user-email-verification;validate-user-is-able-to-register-successfully",
+        "after": [
+          {
+            "result": {
+              "duration": 1161048745,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ExecutionWrapper.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 9354469462,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User open automationpractice website",
+            "match": {
+              "location": "NewUserRegistration.userOpenAutomationpracticeWebsite()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2811317945,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user clicks on the SignIn link",
+            "match": {
+              "location": "NewUserRegistration.theUserClicksOnTheSignInLink()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3537774,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user should be directed to \"AUTHENTICATION\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "AUTHENTICATION",
+                  "offset": 28
+                }
+              ],
+              "location": "NewUserRegistration.userShouldBeDirectedToPage(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 199687823,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user should provide an Invalid email address",
+            "match": {
+              "location": "NewUserRegistration.userShouldProvideAnInvalidEmailAddress(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "jane"
+                ],
+                "line": 10
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 250110000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user clicks on the \"Create an account\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Create an account",
+                  "offset": 20
+                }
+              ],
+              "location": "NewUserRegistration.userClicksOnTheButton(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 991549341,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user should see the following error message",
+            "match": {
+              "location": "NewUserRegistration.userShouldSeeTheFollowingErrorMessage(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Invalid email address."
+                ],
+                "line": 13
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@validate_invlaid_emailId"
+          }
+        ]
+      }
+    ],
+    "name": "Incorrect user email verification",
+    "description": "",
+    "id": "incorrect-user-email-verification",
+    "keyword": "Feature",
+    "uri": "Invalid_Email_Testcase.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@regression1"
+      }
+    ]
+  }
+]
