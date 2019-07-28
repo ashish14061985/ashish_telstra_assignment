@@ -7,7 +7,7 @@ Feature: Incorrect user email verification
     Then user should be directed to "AUTHENTICATION" page
 
     Then user should provide an Invalid email address
-      |jane|
+      |jane_@|
     Then user clicks on the "Create an account" button
     Then user should see the following error message
       |Invalid email address.|
